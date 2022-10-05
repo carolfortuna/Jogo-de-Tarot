@@ -1,1 +1,1 @@
-# Jogo-de-Tarot
+### JOGO DE TAROT
