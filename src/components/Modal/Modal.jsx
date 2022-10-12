@@ -1,18 +1,21 @@
 import React from "react";
-import {Back, Background, ModalBox} from "./styles"
-import axios from 'axios';
-import { useState, useEffect } from "react";
+import { ModalBackgroud, ModalButton, ModalCard } from "./styles";
 
-function Modal() {
-
+function Modal({ imageUrl, imageCards, index}) {
+console.log(imageCards, imageUrl)
   return (
-    <Background>
-    <ModalBox>
+    <div>
+     <ModalBackgroud>
+         <ModalButton onClick={()=>window.location.reload(true)}>Jogar novamente</ModalButton>
+         <ModalCard
+         src= {imageUrl + imageCards[index].image}
+         
+         >
+       
+         </ModalCard>
+     </ModalBackgroud>
      
-    <h1>Modal</h1>
-     <button>X</button>
-    </ModalBox>
-    </Background>
+    </div>
   );
 }
 

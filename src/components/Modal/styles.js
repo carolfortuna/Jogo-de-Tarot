@@ -1,23 +1,31 @@
-import styled from "styled-components"
+import styled from "styled-components";
 
-export const ModalBox = styled.div `
-background-color: hotpink;
-height: 500px;
-width: 500px;
+
+export const ModalCard = styled.img`
+background-color: pink;
+height: 308px;
+width: 150px;
 position: absolute;
-
 top: 100px;
-left: 400px;
-right: 0px;
-
+left: 600px;
 `
 
-export const Background = styled.div `
-height: 300%;
+export const ModalButton = styled.button`
+margin-top: 420px;
+margin-inline: 620px;
+cursor: pointer;
+`
+
+export const ModalBackgroud = styled.div`
+background-color: rgba(1,1,1,0.85);
+height: 170%;
 width: 100%;
-background-color: rgba(0,0,0,0.85);
 position: absolute;
-z-index: 0;
-top: 0px;
+z-index: 1;
+top:0px;
 left: 0px;
+`
+
+export const ExitButton = styled.button`
+
 `

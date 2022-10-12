@@ -1,9 +1,9 @@
 import React, { useState ,useEffect} from "react";
-import CardBack from "./components/CardBack/CardBack"
-import CardFront from "./components/CardFront/CardFront";
-import {Front, Container} from "./components/CardFront/styles"
+import Card from "./components/Card/Card";
+import {Front, Container} from "./components/Card/styles"
 import Modal from "./components/Modal/Modal"
 import axios from "axios";
+import Header from "./components/Header/Header";
 
 //https://www.youtube.com/watch?v=XcHNBMG1GQI&ab_channel=TheNetNinja  
 //embaralhar cartas
@@ -54,23 +54,24 @@ return arr;
  
   const renderCards = shuffleArray(imageCards).map((_, index) =>{
 
-      return <CardFront 
-    
-
+      return <Card 
+      index={index}
       imageBackCard = {imageBackCard}
-      imageCards = {imageCards[index].image}
+      imageCards = {imageCards}
       imageUrl = {imageUrl}
-
       />
+      
+    
    
  })
 
 
   return (
+   
     <Container>
-     
+    <Header/>
   {renderCards}
-  
+
 
   
     </Container>
