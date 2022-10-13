@@ -7,3 +7,5 @@ Como não tive acesso a um banco de dados com a descrição da carta, fica a sug
 
 Tecnologias utilizadas:
 HTML, CSS, Javascript, React, consumo de API Rest, styled-components. 
+
+Link: https://tarot-carol-fortuna.surge.sh/
